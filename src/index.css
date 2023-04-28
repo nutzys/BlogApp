@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --primary: #802392;
+  --secondary: #995FA3;
+  --third: #9A98B5;
+  --text: #343a40;
+  --label: #868e96;
+  --disabled: #ced4da;
+  --lengthsm1: 4px;
+  --lengthsm2: 8px;
+  --lengthsm3: 12px;
+  --lengthmd1: 16px;
+  --lengthmd2: 20px;
+  --lengthmd3: 24px;
+  --lengthlg1: 32px;
+  --lengthlg2: 48px;
+  --lengthlg3: 64px;
+}
+
+.navbar {
+  background-color: var(--primary);
+  height: var(--lengthlg3);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--lengthmd2);
+  color: var(--text);
+  font-size: var(--lengthmd2);
+  text-decoration: underline;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin: var(--lengthlg1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 300px;
+  width: 250px;
+}
+
+.user-card a{
+  background-color: var(--secondary);
+  border: none;
+  border-radius: var(--lengthsm1);
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.user-card button:hover{
+  background-color: var(--primary);
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.user-container {
+  height: 400px;
+  padding: 24px;
+}
+
+.post-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px;
+}
+
+.posts-title {
+  text-align: center;
+}
+
+.title-container {
+  height: var(--lengthlg2);
+  color: var(--text);
+}
+
+.body-container{
+  color: var(--label);
+}
+
+.user-picture-container{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.picture {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 24px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  color: var(--label);
+}
+
+.details span {
+  font-size: var(--lengthmd1);
+  color: var(--text);
+}
